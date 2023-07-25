@@ -183,7 +183,7 @@ main {
 
 
 /* Add some background color and animation to the header */
-.header {
+/* .header {
     margin-top: 20px;
     background-color: #ff0080;
     padding: 10px;
@@ -191,7 +191,7 @@ main {
     animation: colorChange 2s infinite alternate;
     width: 100%;
 
-}
+} */
 
 @keyframes colorChange {
     from { background-color: #ff0080; }
