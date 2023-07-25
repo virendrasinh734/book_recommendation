@@ -2,8 +2,6 @@ from flask import Flask,render_template,request,g
 import pickle
 import numpy as np
 import sqlite3
-import re
-from pytrie import StringTrie
 import pandas as pd
 app = Flask(__name__)
 
