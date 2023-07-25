@@ -1,0 +1,11 @@
+Flask
+Jinja2
+matplotlib
+numpy
+packaging
+pandas
+pickleshare
+Pillow
+scikit-learn
+scipy
+gunicorn
