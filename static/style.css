@@ -480,3 +480,61 @@ body{
 .nav-logo{
     color: #3347ff;
 }
+body{
+    background-image: url(endless-constellation\ \(2\).svg);
+}
+.content{
+    padding: 15px;
+    background-color: grey;
+}
+
+.content {
+    /* width: 80%;
+    max-width: 600px; */
+    min-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    border-color: yellow;
+    border-width: 15px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    box-shadow: 4px 8px 16px rgba(227, 231, 17, 0.918);
+    height: auto;
+    min-height: 600px;
+  }
+  @media (max-width: 600px) {
+    .content {
+      width: 90%; /* Reduce width to 90% on mobile devices for better fit */
+      min-width: unset; /* Remove min-width to allow responsiveness */
+      margin: 20px auto; /* Adjust margin for smaller screens */
+      padding: 10px; /* Reduce padding for better content visibility */
+      padding-bottom: 20px; /* Reduce padding-bottom for better content visibility */
+      border-radius: 15px; /* Slightly reduce border-radius for smoother edges */
+      border-width: 10px; /* Reduce border-width for better fit on smaller screens */
+      max-height: 100vh;
+      /* Set overflow-y to 'auto' to enable vertical scrolling if content overflows */
+      overflow-y: auto;
+      min-height: 600px
+    }
+  }
+
+
+  /* Example for TTF font file */
+@font-face {
+    font-family: 'CustomFont';
+    src: url(font-awesome/Font\ Awesome\ 5\ Brands-Regular-400.otf) format('truetype');
+    /* Add more src declarations for other font formats if necessary */
+  }
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url(beautiful-people-font/BeautifulPeoplePersonalUse-dE0g.ttf) format('truetype');
+    /* Add more src declarations for other font formats if necessary */
+  }
+  body {
+    font-family: 'CustomFont', sans-serif;
+    /* Replace 'CustomFont' with the actual font-family name used in @font-face */
+  }
+  h2{
+    font-family: 'CustomFont2', sans-serif;
+  }
