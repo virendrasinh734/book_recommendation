@@ -3,10 +3,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import time
 
-# Initialize the Google Books API client
-books = build('books', 'v1', developerKey='AIzaSyAFyWCJ6Tt-6oeMzpXTuNJoVNOj_C57E0w')  # Replace with your API key
+books = build('books', 'v1', developerKey='')
 
-# Load your JSON data
 with open('part_2.json', 'r') as json_file:
     data = json.load(json_file)
 

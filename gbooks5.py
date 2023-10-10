@@ -2,17 +2,18 @@ import json
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import time
+import logging
+logging.basicConfig()
+# log_file_path = "./logs/log_file5.txt"
+logging.basicConfig(filename='log_file6.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+books = build('books', 'v1', developerKey='')  
 
-# Initialize the Google Books API client
-books = build('books', 'v1', developerKey='AIzaSyBQDAzcbQlx6MQLygKXnjHZbc3tYLNtQH0')  # Replace with your API key
-
-with open('part_3.json', 'r') as json_file:
+with open('./jsons/part_6.json', 'r') as json_file:
     data = json.load(json_file)
 
 book_info = {}
-index = 1920
+index = 4800
 
-# Iterate through the list of dictionaries
 for entry in data:
     inner_dict = entry[str(index)]
     title = inner_dict['title']
@@ -31,21 +32,25 @@ for entry in data:
                 categories = volume_info.get('categories', [])
                 book_info[index]['description'] = description
                 book_info[index]['categories'] = categories
-
+                logging.info(f'Book info found for ISBN: {isbn} , title:{title}') 
                 break
         except HttpError as e:
             if e.resp.status == 404:
+                logging.error(f'Book not found for ISBN: {isbn}')
                 print(f'Book not found for ISBN: {isbn}')
             else:
+                logging.error(f'Error fetching book info for ISBN: {isbn}, Error: {str(e)}')
                 print(f'Error fetching book info for ISBN: {isbn}, Error: {str(e)}')
 
     with open(f'./ddeess/{index}.txt', 'w', encoding='utf-8') as txt_file:
         txt_file.write(book_info[index]['description'])
+        logging.info(f'Data written to file for index: {index}')
     
     index += 1
     time.sleep(1)
-
-with open('book_info_3.json', 'w') as json_output:
+ofname='book_info_6.json'
+with open(ofname, 'w') as json_output:
     json.dump(book_info, json_output)
+    logging.info(f"Book info dictioanry dumped to a json: {ofname}")
 
 print('Descriptions saved successfully.')
