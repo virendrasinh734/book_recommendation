@@ -3,16 +3,15 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import time
 import logging
-logging.basicConfig()
 # log_file_path = "./logs/log_file5.txt"
-logging.basicConfig(filename='log_file6.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename="process.log", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 books = build('books', 'v1', developerKey='')  
 
-with open('./jsons/part_6.json', 'r') as json_file:
+with open('./jsons/part_7.json', 'r') as json_file:
     data = json.load(json_file)
 
 book_info = {}
-index = 4800
+index = 5760
 
 for entry in data:
     inner_dict = entry[str(index)]
@@ -48,7 +47,7 @@ for entry in data:
     
     index += 1
     time.sleep(1)
-ofname='book_info_6.json'
+ofname='book_info_7.json'
 with open(ofname, 'w') as json_output:
     json.dump(book_info, json_output)
     logging.info(f"Book info dictioanry dumped to a json: {ofname}")
