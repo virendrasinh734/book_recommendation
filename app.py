@@ -5,7 +5,7 @@ import sqlite3
 import pandas as pd
 app = Flask(__name__)
 
-table=pickle.load(open('table.pkl','rb'))
+table=pickle.load(open('./picktable.pkl','rb'))
 indices=pickle.load(open('indices.pkl','rb'))
 
 booksdb=pickle.load(open('booksdb.pkl','rb'))
