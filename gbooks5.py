@@ -5,7 +5,7 @@ import time
 import logging
 # log_file_path = "./logs/log_file5.txt"
 logging.basicConfig(filename="process_9_n.log", format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
-books = build('books', 'v1', developerKey='AIzaSyAos12iQhJMoLfF6v1JgziSDuCPNl29Ucg')  
+books = build('books', 'v1', developerKey='')  
 
 with open('.\jsons\part_9.json', 'r') as json_file:
     data = json.load(json_file)
