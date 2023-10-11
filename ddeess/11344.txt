@@ -1,0 +1,1 @@
+Includes charts for finding your sun sign, moon sign, ascendant sign, and the sign for each planet.
