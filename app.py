@@ -5,10 +5,11 @@ import sqlite3
 import pandas as pd
 app = Flask(__name__)
 
-table=pickle.load(open('./picktable.pkl','rb'))
-indices=pickle.load(open('indices.pkl','rb'))
-
-booksdb=pickle.load(open('booksdb.pkl','rb'))
+table=pickle.load(open('./pickle_files/table.pkl','rb'))
+# indices=pickle.load(open('indices.pkl','rb'))
+with open('combined_cosine_sim_matrix.pkl', 'rb') as file:
+    combined_cosine_sim_matrix = pickle.load(file)
+booksdb=pickle.load(open('./pickle_files/booksdb.pkl','rb'))
 
 def get_db_connection():
     conn = sqlite3.connect('my_database.db')
@@ -47,12 +48,20 @@ def get_suggestions():
 def recommend():
     user_input=request.form.get('user_input')
     try:
-        ind=np.where(table.index==user_input)[0][0]
-        temp=indices[ind]
+        
+        book_index = np.where(table.index==user_input)[0][0]
+        book_similarities = combined_cosine_sim_matrix[book_index]
+
+        sorted_indices = np.argsort(book_similarities)[::-1]
+
+        top_recommendations = [i for i in sorted_indices[:7] if i != book_index]
+
+        # ind=np.where(table.index==user_input)[0][0]
+        # temp=indices[ind]
         rc=[]
-        for i in range(1,len(temp)):
+        for i in range(1,len(top_recommendations)):
             item=[]
-            b=table.iloc[temp[i]].name
+            b=table.iloc[top_recommendations[i]].name
             temp_df=booksdb[booksdb['title']==b]
             item.extend(list(temp_df.drop_duplicates('title')['title'].values))
             item.extend(list(temp_df.drop_duplicates('title')['author'].values))
