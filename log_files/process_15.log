@@ -1,0 +1,596 @@
+2023-10-12 08:47:27,919 - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/googleapiclient/discovery_cache/__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/googleapiclient/discovery_cache/file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client.contrib.locked_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/googleapiclient/discovery_cache/file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client.locked_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "/usr/lib/python3/dist-packages/googleapiclient/discovery_cache/file_cache.py", line 40, in <module>
+    raise ImportError(
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+2023-10-12 08:47:27,920 - INFO - URL being requested: GET https://www.googleapis.com/discovery/v1/apis/books/v1/rest?key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88
+2023-10-12 08:47:28,361 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0515135283&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:29,903 - INFO - Book info found for ISBN: 0515135283 , title:Without Fail
+2023-10-12 08:47:29,903 - INFO - Data written to file for index: 13440
+2023-10-12 08:47:30,905 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0399148612&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:31,343 - INFO - Book info found for ISBN: 0399148612 , title:Without Fail (Jack Reacher Novels (Hardcover))
+2023-10-12 08:47:31,343 - INFO - Data written to file for index: 13441
+2023-10-12 08:47:32,344 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0743448677&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:32,821 - INFO - Book info found for ISBN: 0743448677 , title:Without Pity : Ann Rule's Most Dangerous Killers
+2023-10-12 08:47:32,821 - INFO - Data written to file for index: 13442
+2023-10-12 08:47:33,824 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0425143325&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:34,245 - INFO - Book info found for ISBN: 0425143325 , title:Without Remorse
+2023-10-12 08:47:34,245 - INFO - Data written to file for index: 13443
+2023-10-12 08:47:35,247 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0375758453&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:35,677 - INFO - Book info found for ISBN: 0375758453 , title:Without Reservations : The Travels of an Independent Woman
+2023-10-12 08:47:35,678 - INFO - Data written to file for index: 13444
+2023-10-12 08:47:36,680 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0778320510&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:37,127 - INFO - Book info found for ISBN: 0778320510 , title:Without You (Mira)
+2023-10-12 08:47:37,128 - INFO - Data written to file for index: 13445
+2023-10-12 08:47:38,129 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0670870897&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:38,609 - INFO - Book info found for ISBN: 0670870897 , title:Without a Doubt
+2023-10-12 08:47:38,609 - INFO - Data written to file for index: 13446
+2023-10-12 08:47:39,611 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0425173631&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:40,015 - INFO - Book info found for ISBN: 0425173631 , title:Witness in Death (Eve Dallas Mysteries (Paperback))
+2023-10-12 08:47:40,016 - INFO - Data written to file for index: 13447
+2023-10-12 08:47:41,018 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451194861&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:41,437 - INFO - Book info found for ISBN: 0451194861 , title:Wizard and Glass (The Dark Tower, Book 4)
+2023-10-12 08:47:41,438 - INFO - Data written to file for index: 13448
+2023-10-12 08:47:42,440 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345362276&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:42,880 - INFO - Book info found for ISBN: 0345362276 , title:Wizard at Large (Rookies Series)
+2023-10-12 08:47:42,880 - INFO - Data written to file for index: 13449
+2023-10-12 08:47:43,882 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553234617&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:44,291 - INFO - Book info found for ISBN: 0553234617 , title:Wizard of Earthsea
+2023-10-12 08:47:44,292 - INFO - Data written to file for index: 13450
+2023-10-12 08:47:45,293 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0486250334&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:45,705 - INFO - Book info found for ISBN: 0486250334 , title:Wizard of Oz Postcards in Full Color (Card Books)
+2023-10-12 08:47:45,706 - INFO - Data written to file for index: 13451
+2023-10-12 08:47:46,708 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0886778190&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:47,114 - INFO - Book info found for ISBN: 0886778190 , title:Wizard of the Grove (Daw Book Collectors)
+2023-10-12 08:47:47,114 - INFO - Data written to file for index: 13452
+2023-10-12 08:47:48,116 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0765346524&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:48,505 - INFO - Book info found for ISBN: 0765346524 , title:Wizard's First Rule (Sword Of Truth)
+2023-10-12 08:47:48,505 - INFO - Data written to file for index: 13453
+2023-10-12 08:47:49,507 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0812548051&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:49,931 - INFO - Book info found for ISBN: 0812548051 , title:Wizard's First Rule (Sword of Truth, Book 1)
+2023-10-12 08:47:49,931 - INFO - Data written to file for index: 13454
+2023-10-12 08:47:50,933 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0670818577&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:51,351 - INFO - Book info found for ISBN: 0670818577 , title:Wlt: A Radio Romance
+2023-10-12 08:47:51,351 - INFO - Data written to file for index: 13455
+2023-10-12 08:47:52,353 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0670878073&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:52,754 - INFO - Book info found for ISBN: 0670878073 , title:Wobegon Boy
+2023-10-12 08:47:52,754 - INFO - Data written to file for index: 13456
+2023-10-12 08:47:53,756 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451209168&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:54,146 - INFO - Book info found for ISBN: 0451209168 , title:Wolf Shadow (Signet Historical Romance)
+2023-10-12 08:47:54,146 - INFO - Data written to file for index: 13457
+2023-10-12 08:47:55,149 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0892965258&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:55,531 - INFO - Book info found for ISBN: 0892965258 , title:Wolf in the Shadows
+2023-10-12 08:47:55,531 - INFO - Data written to file for index: 13458
+2023-10-12 08:47:56,533 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671731424&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:56,957 - INFO - Book info found for ISBN: 0671731424 , title:Wolf's Hour
+2023-10-12 08:47:56,957 - INFO - Data written to file for index: 13459
+2023-10-12 08:47:57,960 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345365399&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:58,389 - INFO - Book info found for ISBN: 0345365399 , title:Wolfwalker
+2023-10-12 08:47:58,389 - INFO - Data written to file for index: 13460
+2023-10-12 08:47:59,392 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0440496039&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:47:59,791 - INFO - Book info found for ISBN: 0440496039 , title:Wolves of Willoughby Chase (Wolves Chronicles)
+2023-10-12 08:47:59,791 - INFO - Data written to file for index: 13461
+2023-10-12 08:48:00,794 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A1880418568&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:01,201 - INFO - Book info found for ISBN: 1880418568 , title:Wolves of the Calla (The Dark Tower, Book 5)
+2023-10-12 08:48:01,201 - INFO - Data written to file for index: 13462
+2023-10-12 08:48:02,204 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0679738568&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:02,621 - INFO - Book info found for ISBN: 0679738568 , title:Woman Hollering Creek and Other Stories (Vintage Contemporaries)
+2023-10-12 08:48:02,621 - INFO - Data written to file for index: 13463
+2023-10-12 08:48:03,623 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373244428&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:04,052 - INFO - Book info found for ISBN: 0373244428 , title:Woman Of Innocence (Morgan'S Mercenaries: Destiny'S Women) (Silhouette Special Edition, No. 1442)
+2023-10-12 08:48:04,052 - INFO - Data written to file for index: 13464
+2023-10-12 08:48:05,054 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373225156&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:05,458 - INFO - Book info found for ISBN: 0373225156 , title:Woman Of Mystery  (A Memory Away ...) (Harlequin Intrigue, No. 515)
+2023-10-12 08:48:05,458 - INFO - Data written to file for index: 13465
+2023-10-12 08:48:06,461 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385417845&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:06,855 - INFO - Book info found for ISBN: 0385417845 , title:Woman Without a Past
+2023-10-12 08:48:06,855 - INFO - Data written to file for index: 13466
+2023-10-12 08:48:07,858 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380423901&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:08,337 - INFO - Book info found for ISBN: 0380423901 , title:Woman of Independence
+2023-10-12 08:48:08,337 - INFO - Data written to file for index: 13467
+2023-10-12 08:48:09,339 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385467958&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:09,733 - INFO - Book info found for ISBN: 0385467958 , title:Woman of the Inner Sea
+2023-10-12 08:48:09,733 - INFO - Data written to file for index: 13468
+2023-10-12 08:48:10,736 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A044900094X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:11,158 - INFO - Book info found for ISBN: 044900094X , title:Woman on the Edge of Time
+2023-10-12 08:48:11,158 - INFO - Data written to file for index: 13469
+2023-10-12 08:48:12,161 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385498411&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:12,564 - INFO - Book info found for ISBN: 0385498411 , title:Woman: An Intimate Geography
+2023-10-12 08:48:12,564 - INFO - Data written to file for index: 13470
+2023-10-12 08:48:13,567 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0876853904&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:13,988 - INFO - Book info found for ISBN: 0876853904 , title:Women
+2023-10-12 08:48:13,988 - INFO - Data written to file for index: 13471
+2023-10-12 08:48:14,991 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A1573240249&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:15,402 - INFO - Book info found for ISBN: 1573240249 , title:Women Who Love Books Too Much: Bibliophiles, Bluestockings, and Prolific Pens from the Algonquin Hotel to the Ya-Ya Sisterhood
+2023-10-12 08:48:15,402 - INFO - Data written to file for index: 13472
+2023-10-12 08:48:16,405 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671620495&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:16,803 - INFO - Book info found for ISBN: 0671620495 , title:Women Who Love Too Much
+2023-10-12 08:48:16,803 - INFO - Data written to file for index: 13473
+2023-10-12 08:48:17,806 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345396812&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:18,229 - INFO - Book info found for ISBN: 0345396812 , title:Women Who Run with the Wolves
+2023-10-12 08:48:18,230 - INFO - Data written to file for index: 13474
+2023-10-12 08:48:19,232 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451627296&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:19,654 - INFO - Book info found for ISBN: 0451627296 , title:Women and Fiction: Short Stories by and About Women
+2023-10-12 08:48:19,655 - INFO - Data written to file for index: 13475
+2023-10-12 08:48:20,657 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345345738&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:21,092 - INFO - Book info found for ISBN: 0345345738 , title:Women in His Life
+2023-10-12 08:48:21,092 - INFO - Data written to file for index: 13476
+2023-10-12 08:48:22,095 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A185326007X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:22,552 - INFO - Book info found for ISBN: 185326007X , title:Women in Love (Wordsworth Classics)
+2023-10-12 08:48:22,552 - INFO - Data written to file for index: 13477
+2023-10-12 08:48:23,555 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385423586&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:23,964 - INFO - Book info found for ISBN: 0385423586 , title:Women of Sand and Myrrh
+2023-10-12 08:48:23,965 - INFO - Data written to file for index: 13478
+2023-10-12 08:48:24,967 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0312099436&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:25,384 - INFO - Book info found for ISBN: 0312099436 , title:Women of the Silk : A Novel
+2023-10-12 08:48:25,384 - INFO - Data written to file for index: 13479
+2023-10-12 08:48:26,387 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553081209&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:26,860 - INFO - Book info found for ISBN: 0553081209 , title:Women's Bodies, Women's Wisdom: Creating Physical and Emotional Health and Healing
+2023-10-12 08:48:26,860 - INFO - Data written to file for index: 13480
+2023-10-12 08:48:27,862 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0875961517&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:28,257 - INFO - Book info found for ISBN: 0875961517 , title:Women's Encyclopedia of Health &amp; Emotional Healing: Top Women Doctors Share Their Unique Self-Help Advice on Your Body, Your Feelings and Your Life
+2023-10-12 08:48:28,257 - INFO - Data written to file for index: 13481
+2023-10-12 08:48:29,260 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0515047880&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:29,662 - INFO - Book info found for ISBN: 0515047880 , title:Womens Room
+2023-10-12 08:48:29,662 - INFO - Data written to file for index: 13482
+2023-10-12 08:48:30,665 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0312140940&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:31,081 - INFO - Book info found for ISBN: 0312140940 , title:Wonder Boys : A Novel (Bestselling Backlist)
+2023-10-12 08:48:31,081 - INFO - Data written to file for index: 13483
+2023-10-12 08:48:32,084 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0688167810&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:32,573 - INFO - Book info found for ISBN: 0688167810 , title:Wonder When You'll Miss Me
+2023-10-12 08:48:32,574 - INFO - Data written to file for index: 13484
+2023-10-12 08:48:33,576 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671004123&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:33,976 - INFO - Book info found for ISBN: 0671004123 , title:Wonderful
+2023-10-12 08:48:33,976 - INFO - Data written to file for index: 13485
+2023-10-12 08:48:34,978 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373710615&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:35,405 - INFO - Book info found for ISBN: 0373710615 , title:Wonders Never Cease (Count On A Cop) (Harlequin Superromance, No. 1061)
+2023-10-12 08:48:35,405 - INFO - Data written to file for index: 13486
+2023-10-12 08:48:36,407 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0142002267&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:36,788 - INFO - Book info found for ISBN: 0142002267 , title:Word Freak: Heartbreak, Triumph, Genius, and Obsession in the World of Competitive Scrabble Players
+2023-10-12 08:48:36,789 - INFO - Data written to file for index: 13487
+2023-10-12 08:48:37,791 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0310217598&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:38,198 - INFO - Book info found for ISBN: 0310217598 , title:Word of Honor
+2023-10-12 08:48:38,199 - INFO - Data written to file for index: 13488
+2023-10-12 08:48:39,201 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060175605&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:40,435 - INFO - Book info found for ISBN: 0060175605 , title:Words I Wish I Wrote: A Collection of Writing That Inspired My Ideas
+2023-10-12 08:48:40,435 - INFO - Data written to file for index: 13489
+2023-10-12 08:48:41,437 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140366016&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:41,841 - INFO - Book info found for ISBN: 0140366016 , title:Words of Stone
+2023-10-12 08:48:41,841 - INFO - Data written to file for index: 13490
+2023-10-12 08:48:42,844 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0767902335&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:43,263 - INFO - Book info found for ISBN: 0767902335 , title:Work as a Spiritual Practice : A Practical Buddhist Approach to Inner Growth and Satisfaction on the Job
+2023-10-12 08:48:43,263 - INFO - Data written to file for index: 13491
+2023-10-12 08:48:44,265 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373790937&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:44,749 - INFO - Book info found for ISBN: 0373790937 , title:Working It (Harlequin Blaze, 89)
+2023-10-12 08:48:44,749 - INFO - Data written to file for index: 13492
+2023-10-12 08:48:45,752 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0525237704&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:46,174 - INFO - Book info found for ISBN: 0525237704 , title:World According to Garp: A Novel
+2023-10-12 08:48:46,174 - INFO - Data written to file for index: 13493
+2023-10-12 08:48:47,177 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0812534271&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:47,590 - INFO - Book info found for ISBN: 0812534271 , title:World Without End
+2023-10-12 08:48:47,591 - INFO - Data written to file for index: 13494
+2023-10-12 08:48:48,593 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0886776244&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:49,032 - INFO - Book info found for ISBN: 0886776244 , title:World Without End (Moontide &amp; Magic Rise)
+2023-10-12 08:48:49,032 - INFO - Data written to file for index: 13495
+2023-10-12 08:48:50,035 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0525432922&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:50,445 - INFO - Book info found for ISBN: 0525432922 , title:World of Christopher Robin
+2023-10-12 08:48:50,446 - INFO - Data written to file for index: 13496
+2023-10-12 08:48:51,448 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0786884622&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:51,869 - INFO - Book info found for ISBN: 0786884622 , title:World of Pies : A Novel
+2023-10-12 08:48:51,869 - INFO - Data written to file for index: 13497
+2023-10-12 08:48:52,872 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140299939&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:53,287 - INFO - Book info found for ISBN: 0140299939 , title:World's End (Contemporary American Fiction)
+2023-10-12 08:48:53,287 - INFO - Data written to file for index: 13498
+2023-10-12 08:48:54,289 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0394525280&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:54,680 - INFO - Book info found for ISBN: 0394525280 , title:World's Fair
+2023-10-12 08:48:54,680 - INFO - Data written to file for index: 13499
+2023-10-12 08:48:55,682 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0440217989&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:56,124 - INFO - Book info found for ISBN: 0440217989 , title:Wormwood: A Collection of Short Stories
+2023-10-12 08:48:56,125 - INFO - Data written to file for index: 13500
+2023-10-12 08:48:57,127 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A031600023X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:57,582 - INFO - Book info found for ISBN: 031600023X , title:Worse Than Watergate: The Secret Presidency of George W. Bush
+2023-10-12 08:48:57,582 - INFO - Data written to file for index: 13501
+2023-10-12 08:48:58,584 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0811831310&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:48:59,002 - INFO - Book info found for ISBN: 0811831310 , title:Worst Case Scenario Survival Handbook: Travel
+2023-10-12 08:48:59,002 - INFO - Data written to file for index: 13502
+2023-10-12 08:49:00,005 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A087113635X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:00,404 - INFO - Book info found for ISBN: 087113635X , title:Worst Fears
+2023-10-12 08:49:00,404 - INFO - Data written to file for index: 13503
+2023-10-12 08:49:01,407 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060191821&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:01,813 - INFO - Book info found for ISBN: 0060191821 , title:Worst Fears Realized
+2023-10-12 08:49:01,813 - INFO - Data written to file for index: 13504
+2023-10-12 08:49:02,815 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380811073&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:03,203 - INFO - Book info found for ISBN: 0380811073 , title:Worth Any Price
+2023-10-12 08:49:03,203 - INFO - Data written to file for index: 13505
+2023-10-12 08:49:04,205 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0679427430&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:04,616 - INFO - Book info found for ISBN: 0679427430 , title:Wouldn't Take Nothing for My Journey Now
+2023-10-12 08:49:04,616 - INFO - Data written to file for index: 13506
+2023-10-12 08:49:05,618 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A034531042X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:06,036 - INFO - Book info found for ISBN: 034531042X , title:Wounded Land (Second Chronicles of Thomas Covenant)
+2023-10-12 08:49:06,036 - INFO - Data written to file for index: 13507
+2023-10-12 08:49:07,038 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345278313&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:07,429 - INFO - Book info found for ISBN: 0345278313 , title:Wounded Land Covenant 1 (Wounded Land)
+2023-10-12 08:49:07,429 - INFO - Data written to file for index: 13508
+2023-10-12 08:49:08,432 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0330487949&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:08,838 - INFO - Book info found for ISBN: 0330487949 , title:Wow
+2023-10-12 08:49:08,838 - INFO - Data written to file for index: 13509
+2023-10-12 08:49:09,841 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553578944&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:10,234 - INFO - Book info found for ISBN: 0553578944 , title:Wraith Squadron (Star Wars: X-Wing Series, Book 5)
+2023-10-12 08:49:10,234 - INFO - Data written to file for index: 13510
+2023-10-12 08:49:11,237 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0441007147&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:11,650 - INFO - Book info found for ISBN: 0441007147 , title:Wrapt in Crystal
+2023-10-12 08:49:11,651 - INFO - Data written to file for index: 13511
+2023-10-12 08:49:12,653 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553582267&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:13,064 - INFO - Book info found for ISBN: 0553582267 , title:Wreck the Halls
+2023-10-12 08:49:13,064 - INFO - Data written to file for index: 13512
+2023-10-12 08:49:14,066 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0064405788&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:14,486 - INFO - Book info found for ISBN: 0064405788 , title:Wringer (Trophy Newbery)
+2023-10-12 08:49:14,486 - INFO - Data written to file for index: 13513
+2023-10-12 08:49:15,488 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0440236053&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:15,903 - INFO - Book info found for ISBN: 0440236053 , title:Writ of Execution
+2023-10-12 08:49:15,903 - INFO - Data written to file for index: 13514
+2023-10-12 08:49:16,905 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A089471273X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:17,329 - INFO - Book info found for ISBN: 089471273X , title:Writer's Notebook
+2023-10-12 08:49:17,329 - INFO - Data written to file for index: 13515
+2023-10-12 08:49:18,332 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0877733759&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:18,747 - INFO - Book info found for ISBN: 0877733759 , title:Writing Down the Bones
+2023-10-12 08:49:18,747 - INFO - Data written to file for index: 13516
+2023-10-12 08:49:19,750 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0679744479&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:20,147 - INFO - Book info found for ISBN: 0679744479 , title:Written on the Body
+2023-10-12 08:49:20,148 - INFO - Data written to file for index: 13517
+2023-10-12 08:49:21,149 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0064472876&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:21,531 - INFO - Book info found for ISBN: 0064472876 , title:Wurst Case Scenario
+2023-10-12 08:49:21,531 - INFO - Data written to file for index: 13518
+2023-10-12 08:49:22,534 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553212583&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:22,947 - INFO - Book info found for ISBN: 0553212583 , title:Wuthering Heights
+2023-10-12 08:49:22,947 - INFO - Data written to file for index: 13519
+2023-10-12 08:49:23,950 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0486292568&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:24,380 - INFO - Book info found for ISBN: 0486292568 , title:Wuthering Heights (Dover Thrift Editions)
+2023-10-12 08:49:24,380 - INFO - Data written to file for index: 13520
+2023-10-12 08:49:25,383 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0192833545&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:25,779 - INFO - Book info found for ISBN: 0192833545 , title:Wuthering Heights (Oxford World's Classics)
+2023-10-12 08:49:25,780 - INFO - Data written to file for index: 13521
+2023-10-12 08:49:26,782 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140434186&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:27,185 - INFO - Book info found for ISBN: 0140434186 , title:Wuthering Heights (Penguin Classics)
+2023-10-12 08:49:27,185 - INFO - Data written to file for index: 13522
+2023-10-12 08:49:28,188 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140620125&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:28,615 - INFO - Book info found for ISBN: 0140620125 , title:Wuthering Heights (Penguin Popular Classics)
+2023-10-12 08:49:28,615 - INFO - Data written to file for index: 13523
+2023-10-12 08:49:29,617 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451523385&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:30,016 - INFO - Book info found for ISBN: 0451523385 , title:Wuthering Heights (Signet Classic)
+2023-10-12 08:49:30,016 - INFO - Data written to file for index: 13524
+2023-10-12 08:49:31,018 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A1853260010&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:31,429 - INFO - Book info found for ISBN: 1853260010 , title:Wuthering Heights (Wordsworth Classics)
+2023-10-12 08:49:31,429 - INFO - Data written to file for index: 13525
+2023-10-12 08:49:32,432 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0192815431&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:32,817 - INFO - Data written to file for index: 13526
+2023-10-12 08:49:33,819 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451450124&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:34,251 - INFO - Book info found for ISBN: 0451450124 , title:Wyrd Sisters
+2023-10-12 08:49:34,252 - INFO - Data written to file for index: 13527
+2023-10-12 08:49:35,254 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061020664&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:35,668 - INFO - Book info found for ISBN: 0061020664 , title:Wyrd Sisters (Discworld Novels (Paperback))
+2023-10-12 08:49:35,668 - INFO - Data written to file for index: 13528
+2023-10-12 08:49:36,670 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345461967&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:37,084 - INFO - Book info found for ISBN: 0345461967 , title:X-Men 2: A Novelization
+2023-10-12 08:49:37,084 - INFO - Data written to file for index: 13529
+2023-10-12 08:49:38,086 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671019163&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:38,517 - INFO - Book info found for ISBN: 0671019163 , title:X-Men Planet X (Star Trek The Next Generation)
+2023-10-12 08:49:38,517 - INFO - Data written to file for index: 13530
+2023-10-12 08:49:39,520 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345440951&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:39,965 - INFO - Book info found for ISBN: 0345440951 , title:X-Men: A Novelization
+2023-10-12 08:49:39,966 - INFO - Data written to file for index: 13531
+2023-10-12 08:49:40,968 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0586054472&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:41,548 - INFO - Book info found for ISBN: 0586054472 , title:XPD
+2023-10-12 08:49:41,549 - INFO - Data written to file for index: 13532
+2023-10-12 08:49:42,551 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380759470&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:42,974 - INFO - Book info found for ISBN: 0380759470 , title:Xanth 13: Isle of View
+2023-10-12 08:49:42,974 - INFO - Data written to file for index: 13533
+2023-10-12 08:49:43,976 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380759489&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:44,401 - INFO - Book info found for ISBN: 0380759489 , title:Xanth 14: Question Quest
+2023-10-12 08:49:44,402 - INFO - Data written to file for index: 13534
+2023-10-12 08:49:45,404 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380759497&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:45,827 - INFO - Book info found for ISBN: 0380759497 , title:Xanth 15: The Color of Her Panties
+2023-10-12 08:49:45,828 - INFO - Data written to file for index: 13535
+2023-10-12 08:49:46,830 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0812509250&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:47,249 - INFO - Book info found for ISBN: 0812509250 , title:Xenocide (Ender Wiggins Saga (Paperback))
+2023-10-12 08:49:47,249 - INFO - Data written to file for index: 13536
+2023-10-12 08:49:48,252 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A068486424X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:48,768 - INFO - Book info found for ISBN: 068486424X , title:YESTERDAY, I CRIED : Celebrating the Lessons of Living and Loving
+2023-10-12 08:49:48,768 - INFO - Data written to file for index: 13537
+2023-10-12 08:49:49,770 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0684835959&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:50,196 - INFO - Book info found for ISBN: 0684835959 , title:YOU BELONG TO ME
+2023-10-12 08:49:50,196 - INFO - Data written to file for index: 13538
+2023-10-12 08:49:51,198 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380793261&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:51,582 - INFO - Book info found for ISBN: 0380793261 , title:Yankee Doodle Dead (Death on Demand Mysteries (Paperback))
+2023-10-12 08:49:51,582 - INFO - Data written to file for index: 13539
+2023-10-12 08:49:52,585 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671737554&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:52,973 - INFO - Book info found for ISBN: 0671737554 , title:Yankee Wife
+2023-10-12 08:49:52,973 - INFO - Data written to file for index: 13540
+2023-10-12 08:49:53,975 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553050931&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:54,394 - INFO - Book info found for ISBN: 0553050931 , title:Yeager: An Autobiography
+2023-10-12 08:49:54,394 - INFO - Data written to file for index: 13541
+2023-10-12 08:49:55,397 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0330312367&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:55,799 - INFO - Book info found for ISBN: 0330312367 , title:Year In Provence
+2023-10-12 08:49:55,799 - INFO - Data written to file for index: 13542
+2023-10-12 08:49:56,801 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0743406125&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:57,215 - INFO - Book info found for ISBN: 0743406125 , title:Year Zero
+2023-10-12 08:49:57,216 - INFO - Data written to file for index: 13543
+2023-10-12 08:49:58,218 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0142001430&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:49:58,616 - INFO - Book info found for ISBN: 0142001430 , title:Year of Wonders
+2023-10-12 08:49:58,616 - INFO - Data written to file for index: 13544
+2023-10-12 08:49:59,619 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A067091021X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:00,006 - INFO - Book info found for ISBN: 067091021X , title:Year of Wonders: A Novel of the Plague
+2023-10-12 08:50:00,007 - INFO - Data written to file for index: 13545
+2023-10-12 08:50:01,009 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A006447335X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:01,424 - INFO - Book info found for ISBN: 006447335X , title:Year of the Griffin
+2023-10-12 08:50:01,425 - INFO - Data written to file for index: 13546
+2023-10-12 08:50:02,427 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A042515517X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:02,866 - INFO - Book info found for ISBN: 042515517X , title:Year of the Tiger
+2023-10-12 08:50:02,866 - INFO - Data written to file for index: 13547
+2023-10-12 08:50:03,868 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061059013&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:04,283 - INFO - Book info found for ISBN: 0061059013 , title:Year's Best SF 3
+2023-10-12 08:50:04,283 - INFO - Data written to file for index: 13548
+2023-10-12 08:50:05,286 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061020540&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:05,757 - INFO - Book info found for ISBN: 0061020540 , title:Year's Best SF 5
+2023-10-12 08:50:05,757 - INFO - Data written to file for index: 13549
+2023-10-12 08:50:06,759 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061061433&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:07,156 - INFO - Book info found for ISBN: 0061061433 , title:Year's Best SF 7
+2023-10-12 08:50:07,156 - INFO - Data written to file for index: 13550
+2023-10-12 08:50:08,158 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0515084891&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:08,548 - INFO - Data written to file for index: 13551
+2023-10-12 08:50:09,550 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345377168&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:09,956 - INFO - Book info found for ISBN: 0345377168 , title:Yellow Dog Party (Thomas Black Mysteries)
+2023-10-12 08:50:09,956 - INFO - Data written to file for index: 13552
+2023-10-12 08:50:10,959 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0821767852&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:11,432 - INFO - Book info found for ISBN: 0821767852 , title:Yesterday
+2023-10-12 08:50:11,432 - INFO - Data written to file for index: 13553
+2023-10-12 08:50:12,434 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0684867486&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:12,848 - INFO - Book info found for ISBN: 0684867486 , title:Yesterday I Cried : Celebrating The Lessons Of Living And Loving
+2023-10-12 08:50:12,849 - INFO - Data written to file for index: 13554
+2023-10-12 08:50:13,850 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A1565121570&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:14,322 - INFO - Book info found for ISBN: 1565121570 , title:Yo!
+2023-10-12 08:50:14,322 - INFO - Data written to file for index: 13555
+2023-10-12 08:50:15,324 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0812555104&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:15,740 - INFO - Book info found for ISBN: 0812555104 , title:Yon Ill Wind : A Xanth Novel (Xanth)
+2023-10-12 08:50:15,740 - INFO - Data written to file for index: 13556
+2023-10-12 08:50:16,743 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385509529&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:17,129 - INFO - Book info found for ISBN: 0385509529 , title:You Are Not a Stranger Here (Today Show Book Club #2)
+2023-10-12 08:50:17,129 - INFO - Data written to file for index: 13557
+2023-10-12 08:50:18,131 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385720726&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:18,560 - INFO - Book info found for ISBN: 0385720726 , title:You Are Not a Stranger Here : Stories
+2023-10-12 08:50:18,561 - INFO - Data written to file for index: 13558
+2023-10-12 08:50:19,563 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671004549&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:20,001 - INFO - Book info found for ISBN: 0671004549 , title:You Belong To Me
+2023-10-12 08:50:20,002 - INFO - Data written to file for index: 13559
+2023-10-12 08:50:21,004 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380762587&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:21,438 - INFO - Book info found for ISBN: 0380762587 , title:You Belong to Me
+2023-10-12 08:50:21,439 - INFO - Data written to file for index: 13560
+2023-10-12 08:50:22,441 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671793543&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:22,856 - INFO - Book info found for ISBN: 0671793543 , title:You Belong to Me and Other True Cases (Ann Rule's Crime Files: Vol. 2)
+2023-10-12 08:50:22,856 - INFO - Data written to file for index: 13561
+2023-10-12 08:50:23,859 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0937611018&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:24,252 - INFO - Book info found for ISBN: 0937611018 , title:You Can Heal Your Life/101
+2023-10-12 08:50:24,253 - INFO - Data written to file for index: 13562
+2023-10-12 08:50:25,256 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0590502077&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:25,643 - INFO - Book info found for ISBN: 0590502077 , title:You Can't Eat Your Chicken Pox, Amber Brown (Amber Brown (Paperback))
+2023-10-12 08:50:25,643 - INFO - Data written to file for index: 13563
+2023-10-12 08:50:26,645 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0156997789&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:27,118 - INFO - Book info found for ISBN: 0156997789 , title:You Can't Keep a Good Woman Down
+2023-10-12 08:50:27,119 - INFO - Data written to file for index: 13564
+2023-10-12 08:50:28,121 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0590494503&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:28,538 - INFO - Book info found for ISBN: 0590494503 , title:You Can't Scare Me! (Goosebumps, No 15)
+2023-10-12 08:50:28,538 - INFO - Data written to file for index: 13565
+2023-10-12 08:50:29,540 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373250460&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:30,378 - INFO - Book info found for ISBN: 0373250460 , title:You Have To Kiss A Lot Of Frogs
+2023-10-12 08:50:30,378 - INFO - Data written to file for index: 13566
+2023-10-12 08:50:31,381 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0446519650&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:31,823 - INFO - Book info found for ISBN: 0446519650 , title:You Just Don't Duct Tape a Baby!: True Tales and Sensible Suggestions from a Veteran Pediatrician
+2023-10-12 08:50:31,823 - INFO - Data written to file for index: 13567
+2023-10-12 08:50:32,826 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345372050&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:33,269 - INFO - Book info found for ISBN: 0345372050 , title:You Just Don't Understand
+2023-10-12 08:50:33,269 - INFO - Data written to file for index: 13568
+2023-10-12 08:50:34,272 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0316911488&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:34,677 - INFO - Book info found for ISBN: 0316911488 , title:You Know You Love Me: A Gossip Girl Novel
+2023-10-12 08:50:34,678 - INFO - Data written to file for index: 13569
+2023-10-12 08:50:35,681 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0929264576&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:36,126 - INFO - Book info found for ISBN: 0929264576 , title:You Might Be a Redneck If...
+2023-10-12 08:50:36,126 - INFO - Data written to file for index: 13570
+2023-10-12 08:50:37,129 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0380810158&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:37,534 - INFO - Book info found for ISBN: 0380810158 , title:You Never Can Tell
+2023-10-12 08:50:37,534 - INFO - Data written to file for index: 13571
+2023-10-12 08:50:38,537 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373790198&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:38,944 - INFO - Book info found for ISBN: 0373790198 , title:You Sexy Thing! (Blaze, 15)
+2023-10-12 08:50:38,944 - INFO - Data written to file for index: 13572
+2023-10-12 08:50:39,947 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0970335555&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:40,357 - INFO - Book info found for ISBN: 0970335555 , title:You Shall Know Our Velocity
+2023-10-12 08:50:40,357 - INFO - Data written to file for index: 13573
+2023-10-12 08:50:41,359 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0451170725&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:41,766 - INFO - Book info found for ISBN: 0451170725 , title:You'll Never Eat Lunch in This Town Again
+2023-10-12 08:50:41,766 - INFO - Data written to file for index: 13574
+2023-10-12 08:50:42,769 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0394551907&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:43,200 - INFO - Book info found for ISBN: 0394551907 , title:You're Only Old Once! : A Book for Obsolete Children
+2023-10-12 08:50:43,200 - INFO - Data written to file for index: 13575
+2023-10-12 08:50:44,202 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060175532&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:44,589 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061097667&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:44,991 - INFO - Book info found for ISBN: 0061097667 , title:Young Wives
+2023-10-12 08:50:44,991 - INFO - Data written to file for index: 13576
+2023-10-12 08:50:45,993 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0679724257&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:46,392 - INFO - Book info found for ISBN: 0679724257 , title:Your Baby and Child: From Birth to Age Five
+2023-10-12 08:50:46,392 - INFO - Data written to file for index: 13577
+2023-10-12 08:50:47,395 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345401123&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:47,819 - INFO - Book info found for ISBN: 0345401123 , title:Your Blues Ain't Like Mine
+2023-10-12 08:50:47,819 - INFO - Data written to file for index: 13578
+2023-10-12 08:50:48,821 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345383958&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:49,257 - INFO - Book info found for ISBN: 0345383958 , title:Your Blues Ain't Like Mine (Ballantine Reader's Circle)
+2023-10-12 08:50:49,258 - INFO - Data written to file for index: 13579
+2023-10-12 08:50:50,260 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0962994235&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:50,676 - INFO - Book info found for ISBN: 0962994235 , title:Your Body's Many Cries for Water
+2023-10-12 08:50:50,676 - INFO - Data written to file for index: 13580
+2023-10-12 08:50:51,678 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0061014095&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:52,087 - INFO - Book info found for ISBN: 0061014095 , title:Your Cheatin' Heart : A Novel
+2023-10-12 08:50:52,087 - INFO - Data written to file for index: 13581
+2023-10-12 08:50:53,089 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0308102282&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:53,495 - INFO - Book info found for ISBN: 0308102282 , title:Your Erroneous Zones
+2023-10-12 08:50:53,496 - INFO - Data written to file for index: 13582
+2023-10-12 08:50:54,497 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140167153&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:54,892 - INFO - Book info found for ISBN: 0140167153 , title:Your Money or Your Life: Transforming Your Relationship With Money and Achieving Financial Independence
+2023-10-12 08:50:54,893 - INFO - Data written to file for index: 13583
+2023-10-12 08:50:55,895 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0449912787&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:56,322 - INFO - Book info found for ISBN: 0449912787 , title:Your Oasis on Flame Lake
+2023-10-12 08:50:56,322 - INFO - Data written to file for index: 13584
+2023-10-12 08:50:57,324 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0449002985&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:57,730 - INFO - Book info found for ISBN: 0449002985 , title:Your Oasis on Flame Lake (Ballantine Reader's Circle)
+2023-10-12 08:50:57,730 - INFO - Data written to file for index: 13585
+2023-10-12 08:50:58,733 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A1555611435&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:50:59,184 - INFO - Book info found for ISBN: 1555611435 , title:Your Pregnancy: Week by Week (Your Pregnancy Series)
+2023-10-12 08:50:59,184 - INFO - Data written to file for index: 13586
+2023-10-12 08:51:00,186 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0062513591&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:00,642 - INFO - Book info found for ISBN: 0062513591 , title:Your Sixth Sense: Unlocking the Power of Your Intuition
+2023-10-12 08:51:00,642 - INFO - Data written to file for index: 13587
+2023-10-12 08:51:01,645 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0385481969&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:02,104 - INFO - Book info found for ISBN: 0385481969 , title:Youth in Revolt
+2023-10-12 08:51:02,105 - INFO - Data written to file for index: 13588
+2023-10-12 08:51:03,107 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0836218353&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:03,485 - INFO - Book info found for ISBN: 0836218353 , title:Yukon Ho!
+2023-10-12 08:51:03,485 - INFO - Data written to file for index: 13589
+2023-10-12 08:51:04,488 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373217242&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:04,901 - INFO - Book info found for ISBN: 0373217242 , title:Yuletide Brides (2 Novels in 1)
+2023-10-12 08:51:04,901 - INFO - Data written to file for index: 13590
+2023-10-12 08:51:05,904 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0020446500&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:06,314 - INFO - Book info found for ISBN: 0020446500 , title:Z for Zachariah
+2023-10-12 08:51:06,314 - INFO - Data written to file for index: 13591
+2023-10-12 08:51:07,316 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0684811529&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:07,747 - INFO - Book info found for ISBN: 0684811529 , title:ZEKE AND NED
+2023-10-12 08:51:07,747 - INFO - Data written to file for index: 13592
+2023-10-12 08:51:08,749 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0684825546&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:09,143 - INFO - Book info found for ISBN: 0684825546 , title:ZORBA THE GREEK
+2023-10-12 08:51:09,144 - INFO - Data written to file for index: 13593
+2023-10-12 08:51:10,145 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A2070361039&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:10,555 - INFO - Book info found for ISBN: 2070361039 , title:Zazie Dans Le Metro (Folio)
+2023-10-12 08:51:10,555 - INFO - Data written to file for index: 13594
+2023-10-12 08:51:11,558 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A3453177622&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:11,969 - INFO - Book info found for ISBN: 3453177622 , title:Zeit im Wind.
+2023-10-12 08:51:11,969 - INFO - Data written to file for index: 13595
+2023-10-12 08:51:12,971 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671891685&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:13,433 - INFO - Book info found for ISBN: 0671891685 , title:Zeke and Ned
+2023-10-12 08:51:13,433 - INFO - Data written to file for index: 13596
+2023-10-12 08:51:14,436 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A006104444X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:14,907 - INFO - Book info found for ISBN: 006104444X , title:Zen Attitude
+2023-10-12 08:51:14,908 - INFO - Data written to file for index: 13597
+2023-10-12 08:51:15,909 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0834800799&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:16,303 - INFO - Book info found for ISBN: 0834800799 , title:Zen Mind, Beginner's Mind
+2023-10-12 08:51:16,304 - INFO - Data written to file for index: 13598
+2023-10-12 08:51:17,306 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553207083&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:17,731 - INFO - Book info found for ISBN: 0553207083 , title:Zen and the Art of Motorcycle Maintenance
+2023-10-12 08:51:17,732 - INFO - Data written to file for index: 13599
+2023-10-12 08:51:18,734 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553277472&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:19,150 - INFO - Book info found for ISBN: 0553277472 , title:Zen and the Art of Motorcycle Maintenance: An Inquiry into Values
+2023-10-12 08:51:19,150 - INFO - Data written to file for index: 13600
+2023-10-12 08:51:20,152 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0312969481&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:20,559 - INFO - Book info found for ISBN: 0312969481 , title:Zen and the Art of Murder (St. Martin's Minotaur Mysteries)
+2023-10-12 08:51:20,559 - INFO - Data written to file for index: 13601
+2023-10-12 08:51:21,562 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A055325748X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:21,986 - INFO - Book info found for ISBN: 055325748X , title:Zen and the art of Motorcycle Maintenance
+2023-10-12 08:51:21,986 - INFO - Data written to file for index: 13602
+2023-10-12 08:51:22,989 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553103105&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:23,389 - INFO - Book info found for ISBN: 0553103105 , title:Zen and the art of motorcycle maintenance : an inquiry into values
+2023-10-12 08:51:23,389 - INFO - Data written to file for index: 13603
+2023-10-12 08:51:24,391 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0553296345&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:24,828 - INFO - Book info found for ISBN: 0553296345 , title:Zen in the Art of Writing
+2023-10-12 08:51:24,829 - INFO - Data written to file for index: 13604
+2023-10-12 08:51:25,831 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0312970048&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:26,234 - INFO - Book info found for ISBN: 0312970048 , title:Zero Option
+2023-10-12 08:51:26,234 - INFO - Data written to file for index: 13605
+2023-10-12 08:51:27,237 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0671685112&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:27,727 - INFO - Book info found for ISBN: 0671685112 , title:Zero at the Bone
+2023-10-12 08:51:27,728 - INFO - Data written to file for index: 13606
+2023-10-12 08:51:28,730 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0868246786&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:29,167 - INFO - Book info found for ISBN: 0868246786 , title:Zigzag Street ;
+2023-10-12 08:51:29,167 - INFO - Data written to file for index: 13607
+2023-10-12 08:51:30,169 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0590487922&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:31,122 - INFO - Book info found for ISBN: 0590487922 , title:Zlata's Diary: A Child's Life in Sarajevo
+2023-10-12 08:51:31,122 - INFO - Data written to file for index: 13608
+2023-10-12 08:51:32,125 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0670857246&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:32,555 - INFO - Book info found for ISBN: 0670857246 , title:Zlata's Diary: A Childs Life in Sarajevo
+2023-10-12 08:51:32,556 - INFO - Data written to file for index: 13609
+2023-10-12 08:51:33,558 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0425098087&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:33,960 - INFO - Book info found for ISBN: 0425098087 , title:Zodiac
+2023-10-12 08:51:33,961 - INFO - Data written to file for index: 13610
+2023-10-12 08:51:34,963 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0871131811&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:35,360 - INFO - Book info found for ISBN: 0871131811 , title:Zodiac: The Eco-Thriller
+2023-10-12 08:51:35,360 - INFO - Data written to file for index: 13611
+2023-10-12 08:51:36,362 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0373710208&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:36,780 - INFO - Book info found for ISBN: 0373710208 , title:Zoey Phillips (Girlfriends) (Harlequin Superromance, No. 1020)
+2023-10-12 08:51:36,780 - INFO - Data written to file for index: 13612
+2023-10-12 08:51:37,784 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0345379144&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:38,183 - INFO - Book info found for ISBN: 0345379144 , title:Zombies of the Gene Pool
+2023-10-12 08:51:38,184 - INFO - Data written to file for index: 13613
+2023-10-12 08:51:39,186 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0440203856&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:39,612 - INFO - Book info found for ISBN: 0440203856 , title:Zoya
+2023-10-12 08:51:39,613 - INFO - Data written to file for index: 13614
+2023-10-12 08:51:40,615 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060097825&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:41,098 - INFO - Book info found for ISBN: 0060097825 , title:Zoya's Story: An Afghan Woman's Struggle for Freedom
+2023-10-12 08:51:41,098 - INFO - Data written to file for index: 13615
+2023-10-12 08:51:42,101 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A3404114787&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:42,570 - INFO - Book info found for ISBN: 3404114787 , title:Zwei Frauen. Das Buch zum Film. Roman.
+2023-10-12 08:51:42,570 - INFO - Data written to file for index: 13616
+2023-10-12 08:51:43,573 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A3462032283&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:43,968 - INFO - Book info found for ISBN: 3462032283 , title:ZwÃ?Â¶lf.
+2023-10-12 08:51:43,969 - INFO - Data written to file for index: 13617
+2023-10-12 08:51:44,970 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0146000552&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:45,402 - INFO - Book info found for ISBN: 0146000552 , title:\ Lamb to the Slaughter and Other Stories (Penguin 60s S.)"
+2023-10-12 08:51:45,402 - INFO - Data written to file for index: 13618
+2023-10-12 08:51:46,404 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0805013342&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:46,817 - INFO - Book info found for ISBN: 0805013342 , title:\A\" is for Alibi : A Kinsey Millhone Mystery (A Kinsey Millhone Mystery)"
+2023-10-12 08:51:46,817 - INFO - Data written to file for index: 13619
+2023-10-12 08:51:47,819 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0007122039&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:48,222 - INFO - Book info found for ISBN: 0007122039 , title:\Girls' Night Out\"/\"Boys' Night In\""
+2023-10-12 08:51:48,222 - INFO - Data written to file for index: 13620
+2023-10-12 08:51:49,225 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0449003787&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:49,601 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0805059555&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:49,995 - INFO - Book info found for ISBN: 0805059555 , title:\O\" Is for Outlaw"
+2023-10-12 08:51:50,006 - INFO - Data written to file for index: 13621
+2023-10-12 08:51:51,009 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0393316041&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:51,420 - INFO - Book info found for ISBN: 0393316041 , title:\Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character"
+2023-10-12 08:51:51,420 - INFO - Data written to file for index: 13622
+2023-10-12 08:51:52,424 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0140621377&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:52,877 - INFO - Book info found for ISBN: 0140621377 , title:\The Happy Prince\" and Other Stories (Penguin Popular Classics)"
+2023-10-12 08:51:52,877 - INFO - Data written to file for index: 13623
+2023-10-12 08:51:53,879 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0452281881&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:54,326 - INFO - Book info found for ISBN: 0452281881 , title:e
+2023-10-12 08:51:54,327 - INFO - Data written to file for index: 13624
+2023-10-12 08:51:55,329 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A880781210X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:55,810 - INFO - Book info found for ISBN: 880781210X , title:iI Paradiso Degli Orchi
+2023-10-12 08:51:55,810 - INFO - Data written to file for index: 13625
+2023-10-12 08:51:56,812 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060919655&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:57,184 - INFO - Book info found for ISBN: 0060919655 , title:one hundred years of solitude
+2023-10-12 08:51:57,185 - INFO - Data written to file for index: 13626
+2023-10-12 08:51:58,188 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A0060934719&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:51:58,554 - INFO - Data written to file for index: 13627
+2023-10-12 08:51:59,593 - INFO - URL being requested: GET https://books.googleapis.com/books/v1/volumes?q=isbn%3A006051261X&key=AIzaSyCV6LLIKHr4brc29gJB4i89a566PY-IR88&alt=json
+2023-10-12 08:52:00,030 - INFO - Book info found for ISBN: 006051261X , title:why I'm like this : True Stories
+2023-10-12 08:52:00,030 - INFO - Data written to file for index: 13628
+2023-10-12 08:52:01,035 - INFO - Book info dictioanry dumped to a json: book_info_15.json

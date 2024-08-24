@@ -1,0 +1,1 @@
+Available only in Core 6 & 7.
