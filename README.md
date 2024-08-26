@@ -12,7 +12,7 @@ Cosine Similarity: Employed to measure similarity in both collaborative filterin
 <li>Collaborative Filtering:
 Applied both user-based and item-based approaches using cosine similarity to identify similar users and items based on historical ratings.</li><br>
 <li>Data Collection:
-Scraped book descriptions from OpenLibrary to enrich the dataset with textual information (used BeautifulSoup and applied basic text preprocessing and string manipulation techniques to extract descriptions from page source content).</li><br>
+Scraped book descriptions from OpenLibrary to enrich the dataset with textual information <br>(I used BeautifulSoup and applied basic text preprocessing and string manipulation techniques to extract descriptions from page source content.<br> Wrote scripts to automate the task of searching for a book's url and extracting descriptions from the page related to a particualr book and used python subprocesses to make the process faster).</li><br>
 <li>NLP and Embeddings:
 Processed book descriptions using Doc2Vec to create vector embeddings that capture semantic similarities between books.(specifically used Gensim and finetuned the doc2vec model on the gathered text corpus )</li><br>
 <li>Recommendation System:
