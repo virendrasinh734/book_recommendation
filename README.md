@@ -1,4 +1,4 @@
-# book_recommendation_engine
+# Hybrid Book Recommendation Engine
 ## Overview
 This project is a hybrid book recommendation engine designed to suggest books based on user preferences and book descriptions. 
 Apart from using the conventional collaborative filtering based on user reviews , I incorporated the book descriptions that I scraped from Open Library and apllied natural language processing (NLP) particulary Doc2Vec to deliver hybrid personalized and content-based recommendations.
