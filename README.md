@@ -9,14 +9,14 @@ NLP with Doc2Vec: Analyzes book descriptions to generate embeddings for content-
 Cosine Similarity: Employed to measure similarity in both collaborative filtering and content-based approaches.<br>
 
 ## Implementation Details
-Collaborative Filtering:
-Applied both user-based and item-based approaches using cosine similarity to identify similar users and items based on historical ratings.<br>
-Data Collection:
-Scraped book descriptions from OpenLibrary to enrich the dataset with textual information.<br>
-NLP and Embeddings:
-Processed book descriptions using Doc2Vec to create vector embeddings that capture semantic similarities between books.<br>
-Recommendation System:
-Combined collaborative filtering results with content-based recommendations derived from Doc2Vec embeddings to enhance the recommendation accuracy.<br>
+<li>Collaborative Filtering:
+Applied both user-based and item-based approaches using cosine similarity to identify similar users and items based on historical ratings.</li><br>
+<li>Data Collection:
+Scraped book descriptions from OpenLibrary to enrich the dataset with textual information.</li><br>
+<li>NLP and Embeddings:
+Processed book descriptions using Doc2Vec to create vector embeddings that capture semantic similarities between books.</li><br>
+<li>Recommendation System:
+Combined collaborative filtering results with content-based recommendations derived from Doc2Vec embeddings to enhance the recommendation accuracy.</li><br>
 Web App:
 Used flask in the backend and created a simple website , where user can search (implemented fuzzy search) for a book and get recommendations using this hybridised model.<br>
 
