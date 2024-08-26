@@ -4,20 +4,21 @@ This project is a hybrid book recommendation engine designed to suggest books ba
 Apart from using the conventional collaborative filtering based on user reviews , I incorporated the book descriptions that I scraped from Open Library and apllied natural language processing (NLP) particulary Doc2Vec to deliver hybrid personalized and content-based recommendations.
 
 ## Key Features
-Collaborative Filtering: Utilizes user-item interactions to recommend books.
-NLP with Doc2Vec: Analyzes book descriptions to generate embeddings for content-based recommendations.
-Cosine Similarity: Employed to measure similarity in both collaborative filtering and content-based approaches.
-Implementation Details
+Collaborative Filtering: Utilizes user-item interactions to recommend books.<br>
+NLP with Doc2Vec: Analyzes book descriptions to generate embeddings for content-based recommendations.<br>
+Cosine Similarity: Employed to measure similarity in both collaborative filtering and content-based approaches.<br>
+
+## Implementation Details
 Collaborative Filtering:
-Applied both user-based and item-based approaches using cosine similarity to identify similar users and items based on historical ratings.
+Applied both user-based and item-based approaches using cosine similarity to identify similar users and items based on historical ratings.<br>
 Data Collection:
-Scraped book descriptions from OpenLibrary to enrich the dataset with textual information.
+Scraped book descriptions from OpenLibrary to enrich the dataset with textual information.<br>
 NLP and Embeddings:
-Processed book descriptions using Doc2Vec to create vector embeddings that capture semantic similarities between books.
+Processed book descriptions using Doc2Vec to create vector embeddings that capture semantic similarities between books.<br>
 Recommendation System:
-Combined collaborative filtering results with content-based recommendations derived from Doc2Vec embeddings to enhance the recommendation accuracy.
+Combined collaborative filtering results with content-based recommendations derived from Doc2Vec embeddings to enhance the recommendation accuracy.<br>
 Web App:
-Used flask in the backend and created a simple website , where user can search (implemented fuzzy search) for a book and get recommendations using this hybridised model.
+Used flask in the backend and created a simple website , where user can search (implemented fuzzy search) for a book and get recommendations using this hybridised model.<br>
 
 ## Usage:
 <li>Clone the repository.</li>
