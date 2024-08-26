@@ -28,5 +28,4 @@ Used flask in the backend and created a simple website , where user can search (
 
 
 ## Conclusion
-This project demonstrates an effective integration of collaborative filtering and NLP techniques to provide robust book recommendations. By leveraging both user interactions and content analysis, the engine offers a comprehensive recommendation solution.
-Feel free to customize this template further based on additional features or specific instructions for running the project.
+This project demonstrates an effective integration of collaborative filtering and NLP techniques to provide robust book recommendations. By using  both user interactions and content analysis, the engine offers a comprehensive recommendation solution..
